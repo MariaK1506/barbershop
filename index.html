@@ -4,326 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Barbershop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
-        ">
     <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
-    <!---Шапка сайта-->
     <header class="header">
-        <div class="container header-nav">
-        <nav class="main-nav">
-            <a href="./index.html" class="logo"> <span>Web</span>Studio </a>
-            <ul class="site-nav">
-                <li class="site-nav-item"> <a class="link current" href="">Студия</a> </li>
-                <li class="site-nav-item"> <a class="link" href="./portfolio.html">Портфолио</a> </li>
-                <li class="site-nav-item"> <a class="link" href="">Контакты</a> </li>
+        <a class=" header-logo link" href=""> <img src="./images/Logo.svg" alt="лого сайта"></a>
+        <nav class="header-nav">
+            <ul class="list header-list">
+                <li class="header-item"> <a class="link header-link" href="">О нас</a></li>
+                <li class="header-item"> <a class="link header-link"" href="">Услуги и цены</a></li>
+                <li class="header-item"> <a class="link header-link"" href="">Мастера</a></li>
+                <li class="header-item"> <a class="link header-link"" href="">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="contact-nav">
-            <li class="contact-nav-item"> <a class="link" href="mailto:info@devstudio.com">
-                <svg class="icon-envelope" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>info@devstudio.com</a> </li>
-            <li class="contact-nav-item"> <a class="link" href="tel:+380961111111">
-                <svg class="icon-vector" width="10" height="16">
-                    <use href="./images/icons.svg#icon-vector"></use>
-                </svg>+38 096 111 11 11</a> </li>
-        </ul>
-        </div>
-    </header> 
+        <a class="link header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button type="button" class="header-btn">онлайн-запись</button>
+    </header>
     <main>
-    <!--Герой-->
-    <section class="hero">
-        <h1 class="hero-title"> Эффективные решения для вашего бизнеса </h1>
-        <button class="button-primary" type="button" aria-label="Заказать услугу">Заказать услугу</button>
-    </section>
-    <!--Особенности-->
-    <section class="section">
-        <div class="container">
-            <h2 class="features-title visually-hidden">Особенности</h2>
-            <ul class="features-list">
-                
-                <li class="features-item">
-                    <div class="features-icon">
-                        <svg class="icon-antenna" width="70" height="70">
-                            <use href="./images/icons.svg#icon-antenna"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Внимание к деталям</h3>
-                    <p class="text"> Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        <section class="hero">
+            <ul class="list hero-list">
+                <li class="hero-item"><a class="link hero-link" href="" target="blanc" rel="noopener noreferrer">Instagram</a></li>
+                <li class="hero-item"><a class="link hero-link" href="" target="blanc" rel="noopener noreferrer">Youtube</a></li>
+            </ul>
+            <p lang="en" class="hero-pre-title">A hair salon for men in Kyiv</p>
+            <h1 lang="en" class="hero-title">BarberShop</h1>
+            <p lang="en" class="hero-after-title">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+        </section>
+        <section class="about">
+            <ul class="list about-list">
+                <li class="about-item"><img src="./images/about-img-1.jpg" alt="барбер бреет шею" width="270" height="445"></li>
+                <li class="about-item"><img src="./images/about-img-2.jpg" alt="барбер делает кантик" width="270" height="445"></li>
+            </ul>
+            <p class="about-pte-title">О НАС</p>
+            <h2 class="about-title">Лучший Барбершоп nвоего города</h2>
+            <p class="about-after-title">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+            <p class="about-text">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
+            готовы усовершенствовать каждого, кто к нам приходит!</p>
+            <button type="button" class="about-btn">онлайн-запись</button>
+        </section>
+        <section>
+            <p>Проведи время в компании лучших мастеров</p>
+            <h2>Услуги и цены</h2>
+            <ul class="list">
+                <li>
+                    <p>Мужская стрижка</p>
+                    <p>от 300 грн.</p>
                 </li>
-                <li class="features-item">
-                    <div class="features-icon">
-                        <svg class="icon-clock" width="70" height="70">
-                            <use href="./images/icons.svg#icon-clock"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Пунктуальность</h3>
-                    <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <li>
+                    <p>Стрижка бороды</p>
+                    <p>от 200 грн.</p>
                 </li>
-                <li class="features-item"> 
-                    <div class="features-icon">
-                        <svg class="icon-diagram" width="70" height="70">
-                            <use href="./images/icons.svg#icon-diagram"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Планирование</h3>
-                    <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <li>
+                    <p>Стрижка усов</p>
+                    <p>от 200 грн.</p>
                 </li>
-                <li class="features-item">
-                    <div class="features-icon">
-                        <svg class="icon-astronaut" width="70" height="70">
-                            <use href="./images/icons.svg#icon-astronaut"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Современные технологии</h3>
-                    <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <li>
+                    <p>Бритье опасной бритвой</p>
+                    <p>от 200 грн.</p>
                 </li>
             </ul>
-        </div>
-    </section>
-    <!---Чем занимаемся-->
-    <section class="section no-padding">
-        <div class="container">
-            <h2 class="work-title">Чем мы занимаемся</h2>
-            <ul class="work-list">
-                <li class="work-item"> <img src="./images/img1.jpg" alt="айпад" width="370" height="294"></li>
-                <li class="work-item"> <img src="./images/img2.jpg" alt="смартфон" width="370" height="294"></li>
-                <li class="work-item"> <img src="./images/img3.jpg" alt="планшет" width="370" height="294"></li>
-            </ul>
-        </div>
-    </section>
-    <!--Команда-->
-    <section class="section-team">
-        <div class="container">
-            <h2 class="team-title">Наша команда</h2>
-            <ul class="team-list">
-                <li class="team-item">
-                    <img src="./images/photo1.jpg" alt="фото игоря демьяненко" width="270" height="260">
-                    <div class="team-content">
-                        <h3 class="title">Игорь Демьяненко</h3>
-                        <p class="text"> <span lang="en">Product Designer</span></p>
-                    </div>
-                    <div>
-                        <ul class="social-links">
-                            <li class="social-item"><a href="" class="icon-link">
-                                <svg class="instagram" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a></li>
-                            <li><a href="" class="icon-link">
-                                <svg class="twitter" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a></li>
-                            <li><a href="" class="icon-link">
-                                <svg class="facebook" width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a></li>
-                            <li><a href="" class="icon-link">
-                                <svg class="linkedin" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a></li>
-                        
-                        </ul>
-                    </div>
-                    
+            <ul class="list">
+                <li>
+                    <p>Cтрижка у стажера</p>
+                    <p>от 50 грн.</p>
                 </li>
-                <li class="team-item">
-                    <img src="./images/photo2.jpg" alt="фото ольги репиной" width="270" height="260">
-                    <div class="team-content">
-                        <h3 class="title">Ольга Репина</h3>
-                        <p class="text"> <span lang="en">Frontend Developer</span></p>
-                    </div>
-                    <div>
-                        <ul class="social-links">
-                            <li><a href="" class="icon-link">
-                                    <svg class="instagram" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a></li>
-                            <li><a href="" class="icon-link">
-                                    <svg class="twitter" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a></li>
-                            <li><a href="" class="icon-link">
-                                    <svg class="facebook" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a></li>
-                            <li><a href="" class="icon-link">
-                                    <svg class="linkedin" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a></li>
-                    
-                        </ul>
-                    </div>
+                <li>
+                    <p>Стрижка под насадку</p>
+                    <p>от 200 грн.</p>
                 </li>
-                <li class="team-item">
-                    <img src="./images/photo3.jpg" alt="фото николая тарасова" width="270" height="260">
-                    <div class="team-content">
-                        <h3 class="title">Николай Тарасов</h3>
-                        <p class="text"> <span lang="en">Marketing</span></p>
-                    </div>
-                    <div>
-                        <ul class="social-links">
-                            <li><a href="" class="icon-link">
-                                    <svg class="instagram" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a></li>
-                            <li><a href="" class="icon-link">
-                                    <svg class="twitter" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a></li>
-                            <li><a href="" class="icon-link">
-                                    <svg class="facebook" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a></li>
-                            <li><a href="" class="icon-link">
-                                    <svg class="linkedin" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a></li>
-                    
-                        </ul>
-                    </div>
+                <li>
+                    <p>Детская стрижка (до 12 лет)</p>
+                    <p>от 300 грн.</p>
                 </li>
-                <li class="team-item">
-                    <img src="./images/photo4.jpg" alt="фото михаила ермакова" width="270" height="260">
-                    <div class="team-content">
-                        <h3 class="title">Михаил Ермаков</h3>
-                        <p class="text"> <span lang="en">UI Designer</span></p>
-                    </div>
-                    <div>
-                        <ul class="social-links">
-                            <li><a href="" class="icon-link">
-                                    <svg class="instagram" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a></li>
-                            <li><a href="" class="icon-link">
-                                    <svg class="twitter" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a></li>
-                            <li><a href="" class="icon-link">
-                                    <svg class="facebook" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a></li>
-                            <li><a href="" class="icon-link">
-                                    <svg class="linkedin" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a></li>
-                    
-                        </ul>
-                    </div>
+                <li>
+                    <p>Камуфлирование седины</p>
+                    <p>от 200 грн.</p>
                 </li>
             </ul>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <h2 class="clients-title">Постоянные клиенты</h2>
-            <ul class="clients-list">
-                <li class="clients-item"> 
-                    <a href="" class="clients-link">
-                        <svg class="icon-clients" width="106" height="60">
-                            <use href="./images/icons.svg#icon-client1"></use>
-                        </svg>
-                    </a>
+            <button type="button">онлайн-запись</button>
+        </section>
+        <section>
+            <ul class="list">
+                <li>
+                    <span>600</span>
+                    <p>Довольных клиентов в день</p>
                 </li>
-                <li class="clients-item">
-                    <a href="" class="clients-link">
-                        <svg class="icon-clients" width="106" height="60">
-                            <use href="./images/icons.svg#icon-client2"></use>
-                        </svg>
-                    </a> </li>
-                <li class="clients-item"> 
-                    <a href="" class="clients-link">
-                        <svg class="icon-clients" width="106" height="60">
-                            <use href="./images/icons.svg#icon-client3"></use>
-                        </svg>
-                    </a>
+                <li>
+                    <span>50</span>
+                    <p>Наград за отличный сервис</p>
                 </li>
-                <li class="clients-item">
-                    <a href="" class="clients-link">
-                        <svg class="icon-clients" width="106" height="60">
-                            <use href="./images/icons.svg#icon-client4"></use>
-                        </svg>
-                    </a> </li>
-                <li class="clients-item"> 
-                    <a href="" class="clients-link">
-                        <svg class="icon-clients" width="106" height="60">
-                            <use href="./images/icons.svg#icon-client5"></use>
-                        </svg>
-                    </a>
+                <li>
+                    <span>20</span>
+                    <p>Лучших мастеров Киева</p>
                 </li>
-                <li class="clients-item">
-                    <a href="" class="clients-link">
-                        <svg class="icon-clients" width="106" height="60">
-                            <use href="./images/icons.svg#icon-client6"></use>
-                        </svg>
-                    </a> </li>
+                <li>
+                    <span>100</span>
+                    <p>Подарков постоянным клиентам</p>
+                </li>
             </ul>
-        </div>
-    </section>
-    </main>
-    <!--Футер-->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-inner">
-                <div class="adress-box">
-                    <a href="./index.html" class="logo"> <span>Web</span>Studio </a>
-                    <address>
-                    <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
-                    <a class="link" href="mailto:info@example.com"> info@example.com </a>
-                    <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
-                    </address>
-                </div>
-                <div class="social-links-box">
-                    <h2 class="social-links-title">присоединяйтесь</h2>
-                <ul class="social-links-footer">
-                    <li><a href="" class="icon-link-footer">
-                            <svg class="instagram" width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a></li>
-                    <li><a href="" class="icon-link-footer">
-                            <svg class="twitter" width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a></li>
-                    <li><a href="" class="icon-link-footer">
-                            <svg class="facebook" width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a></li>
-                    <li><a href="" class="icon-link-footer">
-                            <svg class="linkedin" width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a></li>
-                
+            <p>старая традиционная школа</p>
+            <h2>Почему приходят именно к нам?</h2>
+            <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+        </section>
+        <section>
+            <p>для настоящих ценителей атмосферы</p>
+            <h2>Наши мастера</h2>
+            <ul class="list">
+                <li>
+                    <img src="./images/masters-img-1.jpg" alt="барбер стрижет клиента" width="370" height="346">
+                    <h3 lang="en">John Smith</h3>
+                    <p lang="en">Extreme Barber</p>
+                </li>
+                <li>
+                    <img src="./images/masters-img-2.jpg" alt="барбер стрижет клиента" width="370" height="346">
+                    <h3 lang="en">Michele Doe</h3>
+                    <p lang="en">Extreme Barber</p>
+                </li>
+                <li>
+                    <img src="./images/masters-img-3.jpg" alt="барбер стрижет клиента" width="370" height="346">
+                    <h3 lang="en">Alan Black</h3>
+                    <p lang="en">Extreme Barber</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Галерея</h2>
+            <p>На латинском языке “барба” означает “борода”</p>
+            <ul class="list">
+                <li><img src="./images/gallery-img-1.jpg" alt="барбер стрижет клиента" width="270" height="360"></li>
+                <li><img src="./images/gallery-img-2.jpg" alt="барбер стрижет клиента" width="270" height="360"></li>
+                <li><img src="./images/gallery-img-3.jpg" alt="барбер стрижет клиента" width="270" height="360"></li>
+                <li><img src="./images/gallery-img-4.jpg" alt="барбер стрижет клиента" width="270" height="360"></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Онлайн-запись</h2>
+        </section>
+        <section>
+            <h2>Контакты</h2>
+            <a class="link"ddress>
+                <ul class="list">
+                    <li><a class="link" href="https://goo.gl/maps/KWmvifQsFgk5iezQA" target="blanc" rel="noopener noreferrer">ул. Васильковая, 7А
+                    Киев, 08132</a></li>
+                    <li><a class="link" href="tel:+380441111111"></a>+38 044 111 11 11</li>
+                    <li><a class="link" href="mailto:barbershop@email.com"></a>barbershop@email.com</li>
                 </ul>
-                </div>
-            </div>
-        
-        </div>
-    </footer>
+            </address>
+            <b>время работы</b>
+            <p>Ежедневно с 9:00 до 22:00</p>
+        </section>
+    </main>
+<footer>
+    <p>&copy;Copyright 2020</p>
+    <ul class="list">
+        <li><a class="link" href="" target="blanc" rel="noopener noreferrer">Instagram</a></li>
+        <li><a class="link" href="" target="blanc" rel="noopener noreferrer">Youtube</a></li>
+    </ul>
+</footer>
 </body>
 </html>
