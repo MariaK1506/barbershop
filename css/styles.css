@@ -106,7 +106,7 @@ img {
 
 .hero-title {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
@@ -117,4 +117,162 @@ img {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+/* -----------ABOUT--------- */
+
+.about-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36x;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+.about-title {
+  font-family: 'Raleway', sans-serif;
+
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+}
+.about-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33x;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--second-btn-color);
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+/* -------------PRICES-------- */
+
+.prices {
+  background-color: grey;
+}
+.prices-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--first-title-color);
+}
+
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.prices-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--first-btn-color);
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+/* ----------REASONS-------- */
+
+.reasons-digit {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.reasons-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+.reasons-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.reasons-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+}
+
+.reasons-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* ---------MASTERS----------- */
+
+.masters-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+.masters-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+}
+.masters-item-title {
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+.masters-item-text {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
