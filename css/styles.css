@@ -33,8 +33,15 @@ h5,
 h6,
 p,
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 img {
@@ -43,10 +50,46 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
 /*----------- HEADER--------------- */
 .header {
   background-color: grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 70px;
+}
+
+.header-list {
+  display: flex;
+}
+
 .header-link,
 .header-tel {
   font-weight: 600;
@@ -55,14 +98,22 @@ img {
   letter-spacing: 0.1em;
   color: var(--header-color);
 }
-/* .header-tel {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: var(--header-color) ;
-} */
+
+.current {
+  color: var(--accent-color);
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+.header-connect {
+  margin-left: auto;
+}
+
 .header-btn {
+  margin-left: 40px;
+  min-width: 160px;
+  min-height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -70,8 +121,9 @@ img {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--first-btn-color);
+  background-color: transparent;
   border: 1px solid var(--accent-color);
-  box-sizing: border-box;
+
   border-radius: 25px;
 }
 .header-link:hover,
@@ -81,7 +133,13 @@ img {
   color: var(--accent-color);
 }
 .hero {
-  background-color: grey;
+}
+
+.hero-container {
+  display: flex;
+}
+.hero-list {
+  width: 93px;
 }
 .hero-link {
   font-weight: 600;
@@ -94,6 +152,11 @@ img {
 .hero-link:hover,
 .hero-link:focus {
   color: var(--accent-color);
+}
+.hero-right {
+  background-color: grey;
+  flex-grow: 1;
+  padding: 272px 0 206px 96px;
 }
 .hero-pre-title {
   font-weight: 600;
@@ -113,6 +176,7 @@ img {
   color: #ffffff;
 }
 .hero-after-title {
+  max-width: 400px;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -121,7 +185,12 @@ img {
 
 /* -----------ABOUT--------- */
 
+.about {
+  padding-top: 139px;
+  padding-bottom: 131px;
+}
 .about-pre-title {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36x;
@@ -130,6 +199,7 @@ img {
   color: #303030;
 }
 .about-title {
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
 
   font-size: 42px;
@@ -138,6 +208,7 @@ img {
   color: var(--second-title-color);
 }
 .about-after-title {
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -145,12 +216,15 @@ img {
 }
 
 .about-text {
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
 }
 .about-btn {
+  min-width: 160px;
+  min-height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -167,8 +241,11 @@ img {
 
 .prices {
   background-color: grey;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .prices-pre-title {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -177,6 +254,7 @@ img {
   color: rgba(157, 164, 189, 0.6);
 }
 .prices-title {
+  margin-bottom: 44px;
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
   line-height: 1.17;
@@ -192,6 +270,8 @@ img {
 }
 
 .prices-btn {
+  min-width: 160px;
+  min-height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -206,6 +286,10 @@ img {
 
 /* ----------REASONS-------- */
 
+.reasons {
+  padding-top: 121px;
+  padding-bottom: 130px;
+}
 .reasons-digit {
   font-weight: 700;
   font-size: 42px;
@@ -222,6 +306,7 @@ img {
   color: #303030;
 }
 .reasons-pre-title {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
@@ -231,6 +316,7 @@ img {
 }
 
 .reasons-title {
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
   line-height: 1.17;
@@ -247,7 +333,12 @@ img {
 
 /* ---------MASTERS----------- */
 
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .masters-pre-title {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -256,13 +347,26 @@ img {
   color: #303030;
 }
 .masters-title {
+  margin-bottom: 44px;
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
+.masters-list {
+  display: flex;
+  margin: -15px;
+}
+
+.masters-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;
+}
 .masters-item-title {
+  margin-bottom: 30px;
+  margin-bottom: 8px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
   text-align: center;
@@ -274,5 +378,123 @@ img {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* ----------GAllERY----------*/
+
+.gallery {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.gallery-text {
+  margin-bottom: 44px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.gallery-item {
+  flex-basis: calc(100% / 4 - 30 px);
+  margin: 15px;
+}
+/* ---------GISTRATION-------*/
+
+.registration {
+  background-color: grey;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.registration-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--first-title-color);
+}
+
+.registration-btn {
+  min-width: 160px;
+  min-height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+/* ---------CONTACTS---------- */
+
+.contacts {
+  background-color: grey;
+}
+.contacts-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--first-title-color);
+}
+
+.contacts-item-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.contacts-pre-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contacts-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* ---------------FOOTER---------- */
+
+.footer {
+  padding-top: 57px;
+  padding-bottom: 55px;
+}
+.footer-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+
+.footer-item-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.footer-item-link:hover,
+.footer-item-link:focus {
   color: var(--accent-color);
 }
