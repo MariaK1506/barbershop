@@ -71,6 +71,43 @@ img {
   outline: 2px solid tomato;
 }
 
+.pre-title {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.pre-title::before {
+  content: '';
+  margin-right: 21px;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.btn {
+  min-width: 160px;
+  min-height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+.section-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
 /*----------- HEADER--------------- */
 .header {
   background-color: grey;
@@ -112,19 +149,7 @@ img {
 
 .header-btn {
   margin-left: 40px;
-  min-width: 160px;
-  min-height: 40px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--first-btn-color);
-  background-color: transparent;
-  border: 1px solid var(--accent-color);
-
-  border-radius: 25px;
 }
 .header-link:hover,
 .header-link:focus,
@@ -157,27 +182,20 @@ img {
   background-color: grey;
   flex-grow: 1;
   padding: 272px 0 206px 96px;
-  background-image: linear-gradient (rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
     url(../images/hero-bcg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .hero-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
-  font-family: 'Raleway', sans-serif;
-
   font-size: 72px;
   line-height: 1.18;
-  letter-spacing: 0.05em;
   color: #ffffff;
 }
 .hero-after-title {
@@ -212,20 +230,13 @@ img {
 }
 .about-pre-title {
   margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36x;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: #303030;
 }
+
 .about-title {
   margin-bottom: 20px;
-  font-family: 'Raleway', sans-serif;
-
-  font-size: 42px;
+  font-weight: 700;
   line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
 .about-after-title {
@@ -244,18 +255,7 @@ img {
   color: #555555;
 }
 .about-btn {
-  min-width: 160px;
-  min-height: 40px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33x;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--second-btn-color);
-  border: 1px solid var(--accent-color);
-  box-sizing: border-box;
-  border-radius: 25px;
 }
 
 /* -------------PRICES-------- */
@@ -268,19 +268,11 @@ img {
 
 .prices-pre-title {
   margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
+
 .prices-title {
   margin-bottom: 44px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--first-title-color);
 }
 
@@ -300,18 +292,7 @@ img {
 }
 
 .prices-btn {
-  min-width: 160px;
-  min-height: 40px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--first-btn-color);
-  border: 1px solid var(--accent-color);
-  box-sizing: border-box;
-  border-radius: 25px;
 }
 
 /* ----------REASONS-------- */
@@ -337,20 +318,11 @@ img {
 }
 .reasons-pre-title {
   margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: #303030;
 }
 
 .reasons-title {
   margin-bottom: 20px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
 
@@ -370,19 +342,11 @@ img {
 }
 .masters-pre-title {
   margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: #303030;
 }
+
 .masters-title {
   margin-bottom: 44px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
 .masters-list {
@@ -423,12 +387,33 @@ img {
   margin-left: 10px;
 }
 .masters-social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+  color: #303030;
 }
+
+.masters-social-link:hover,
+.masters-social-link:focus {
+  background-color: #303030;
+  /* Добавила бэкграунд черный для лучшего интерактива */
+  color: var(--accent-color);
+}
+
+/* Айкон наследует цвет линка, поэтому мы не задаем ей фил в ховере */
+
+.masters-sicial-icon {
+  fill: currentColor;
+}
+/* .masters-sicial-icon:hover,
+.masters-sicial-icon:focus {
+  fill: var(--accent-color);
+} */
+
 /* ----------GAllERY----------*/
 
 .gallery {
@@ -436,6 +421,8 @@ img {
   padding-bottom: 130px;
 }
 .gallery-text {
+  display: flex;
+  align-items: center;
   margin-bottom: 44px;
   font-weight: 600;
   font-size: 11px;
@@ -445,6 +432,13 @@ img {
   color: #303030;
 }
 
+.gallery-text::before {
+  content: '';
+  margin-right: 21px;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
@@ -458,33 +452,17 @@ img {
 /* ---------GISTRATION-------*/
 
 .registration {
-  background-color: grey;
+  background-color: rgba(25, 28, 38, 1);
   padding-top: 130px;
   padding-bottom: 130px;
 }
 .registration-title {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 42px;
-  line-height: calc(49 / 42);
-  letter-spacing: 0.05em;
   color: var(--first-title-color);
 }
 
 .registration-btn {
-  min-width: 160px;
-  min-height: 40px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-  text-align: center;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: #ffffff;
-  border: 1px solid var(--accent-color);
-  box-sizing: border-box;
-  border-radius: 25px;
 }
 
 /* ---------CONTACTS---------- */
@@ -493,10 +471,6 @@ img {
   background-color: grey;
 }
 .contacts-title {
-  font-family: 'Raleway', sans-serif;
-  font-size: 42px;
-  line-height: calc(49 / 42);
-  letter-spacing: 0.05em;
   color: var(--first-title-color);
 }
 
@@ -507,6 +481,8 @@ img {
   color: #9da4bd;
 }
 .contacts-pre-text {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -515,6 +491,13 @@ img {
   color: #ffffff;
 }
 
+.contacts-pre-text::before {
+  content: '';
+  margin-right: 21px;
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.4);
+}
 .contacts-text {
   font-size: 18px;
   line-height: 1.67;
