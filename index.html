@@ -38,7 +38,7 @@
             </nav>
             <div class="header-connect">
                 <a class="link header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
-                <button type="button" class="header-btn btn">онлайн-запись</button>
+                <button data-modal-open type="button" class="header-btn btn">онлайн-запись</button>
             </div>
             
         </div>
@@ -157,7 +157,10 @@
                 <h2 class="masters-title section-title">Наши мастера</h2>
                 <ul class="list masters-list">
                     <li class="masters-item">
+                        <div class="masters-item-overlay">
                         <img src="./images/masters-img-1.jpg" alt="барбер стрижет клиента" width="370" height="346">
+                        <p class="masters-img-text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos libero rem porro illo neque maxime reiciendis! Commodi iste molestiae nemo ea autem saepe, officiis reiciendis, quis molestias, repellendus aliquid?</p>
+                        </div>
                         <div class="masters-item-content">
                             <h3 lang="en" class="masters-item-title">John Smith</h3>
                             <p lang="en" class="masters-item-text">Extreme Barber</p>
@@ -329,49 +332,12 @@
         </ul>
     </div>
 </footer>
-
-<ul>
-    <li>
-        <img src="" alt="">
-        <a href="">All about headshots inside prossional studios</a>
-        <div class="comments">
-            <p>15 Comments</p>
-            <p>June 2020</p>
-        </div>
-    </li>
-    <li>
-        <img src="" alt="">
-        <a href="">All about headshots inside prossional studios</a>
-        <div class="comments">
-            <p>15 Comments</p>
-            <p>June 2020</p>
-        </div>
-    </li>
-    <li>
-        <img src="" alt="">
-        <a href="">All about headshots inside prossional studios</a>
-        <div class="comments">
-            <p>15 Comments</p>
-            <p>June 2020</p>
-        </div>
-    </li>
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div data-modal class="backdrop is-hidden">
+   <div class="modal">
+       <button data-modal-close type="button" class="btn-close">X</button>
+   </div>
+</div>
+<script src="./js/modal.js"></script>
 
 </body>
 </html>
