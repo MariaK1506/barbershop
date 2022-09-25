@@ -577,11 +577,11 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .hero-main {
-    padding-top: 66px;
+     padding-top: 66px;
   }
-}
+}  */
 
 .hero-right {
   display: inline-block;
